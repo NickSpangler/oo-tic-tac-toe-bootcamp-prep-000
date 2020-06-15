@@ -109,10 +109,10 @@ def over?
   end
 end
 
-# def winner
-#   if won?
-#     return @board[won?(@board)[0]]
-#   end
-# end
+def winner
+  if won?
+    return @board[won?.first]
+  end
+end
   
 end
