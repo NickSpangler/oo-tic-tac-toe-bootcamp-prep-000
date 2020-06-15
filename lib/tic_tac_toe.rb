@@ -93,6 +93,14 @@ class TicTacToe
   false
 end
 
+def full?
+  !@board.any? { |position| position == " "}
+end
 
+def draw?
+  if full? && !won?
+    true
+  end
+end
   
 end
