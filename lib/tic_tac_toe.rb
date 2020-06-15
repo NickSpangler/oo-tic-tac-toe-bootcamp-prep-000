@@ -103,6 +103,10 @@ def draw?
   end
 end
 
-
+def over?
+  if won? || full? || draw?
+    true
+  end
+end
   
 end
