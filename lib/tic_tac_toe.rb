@@ -115,6 +115,13 @@ def winner
   end
 end
 
-
+def play
+  turn until over?
+    if draw?
+      puts "Cat's Game!"
+    elsif won?
+      puts "Congratulations #{winner}!"
+    end
+end
   
 end
